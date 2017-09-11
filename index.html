@@ -15,7 +15,7 @@
   <body>
     <div class="container">
         <div class="row">
-          <div class="col m5">
+          <div class="col m6">
             <div class="card-panel teal">
               <span class="white-text">
                 <h4 style="text-align: center;">
@@ -24,6 +24,19 @@
               <input placeholder="Add movie title..." id="movie_title" type="text" class="validate">
               <input placeholder="Add movie genre..." id="movie_genre" type="text" class="validate">
               <input placeholder="Poster link" id="movie_poster" type="text" class="validate">
+              <a class="waves-effect waves-light btn" style="margin-left: 111px;" id="add_movie">DONE</a>
+              </span>
+            </div>
+          </div>
+          <div class="col m6" style="display: none;" id="editMe">
+            <div class="card-panel teal">
+              <span class="white-text">
+                <h4 style="text-align: center;">
+                  Edit movie
+                </h4>
+              <input placeholder="Add movie title..." id="movie_title_edit" type="text" class="validate" required>
+              <input placeholder="Add movie genre..." id="movie_genre_edit" type="text" class="validate" required>
+              <input placeholder="Poster link" id="movie_poster_edit" type="text" class="validate" required>
               <a class="waves-effect waves-light btn" style="margin-left: 111px;" id="add_movie">DONE</a>
               </span>
             </div>
