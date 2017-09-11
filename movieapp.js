@@ -15,7 +15,7 @@ $(document).ready(function(){
       console.log("Image url: " +  image);
       // $("#poster_image").attr("src",image);
       // console.log(image);
-      $( "#movie_added" ).append( '<div class="col m4" id=C'+(k)+' > <div class="card"> <div class="card-image"> <img src='   + image +   ' id="poster_image_'+ (i++) +    '> <span class="card-title"><b></b></span> </div> <div class="card-content"> <h6>'+ movie_title +  '</h6> </div> <div class="card-action"> <a href="#">'  + movie_genre +    '</a>           <a class="waves-effect waves-light btn blue" id="doneCounter" onclick="hide('+k+')">done</a> </div> </div> </div>' );
+      $( "#movie_added" ).append( '<div class="col m6" id=C'+(k)+' > <div class="card"> <div class="card-image"> <img src='   + image +   ' id="poster_image_'+ (i++) +    '> <span class="card-title"><b></b></span> </div> <div class="card-content"> <h6>'+ movie_title +  '</h6> </div> <div class="card-action"> <a href="#">'  + movie_genre +    '</a>   <a class="waves-effect waves-light btn red" id="doneCounter" onclick="hide('+k+')">Delete</a>  <a class="waves-effect waves-light btn blue" onclick="edit('+k+')">Edit</a> </div> </div> </div>' );
       k++;
     });
 });
@@ -24,4 +24,9 @@ function hide(k)
 {
   console.log(k);
   $('#C'+k).remove();
+}
+
+fucntion edit(k)
+{
+
 }
