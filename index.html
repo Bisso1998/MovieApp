@@ -3,8 +3,37 @@
   <head>
     <meta charset="utf-8">
     <title>Movie App</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="movieapp.js"></script>
+
   </head>
   <body>
+    <div class="row">
+      <div class="col m5">
+        <div class="card-panel teal">
+          <span class="white-text">
+            <h4 style="text-align: center;">
+              Add movie
+            </h4>
+          <input placeholder="Add movie title..." id="movie_title" type="text" class="validate">
+          <input placeholder="Add movie genre..." id="movie_genree" type="text" class="validate">
+          <input placeholder="Director Name" id="movie_dir" type="text" class="validate">
+          <input placeholder="Poster link" id="movie_psoter" type="text" class="validate">
+          <a class="waves-effect waves-light btn" style="margin-left: 152px;" id="add_movie">DONE</a>
 
+          </span>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row" id="movie_added">
+
+      </div>
   </body>
 </html>
